@@ -1,0 +1,11 @@
+{
+    "id": "0",
+    "nombres": "Jose Ferney",
+    "apellidos": "Perez Camacho",
+    "telefono": "3178873843",
+    "ubicaciones":
+    {
+        "ciudad": "Popayan",
+        "direccion": "Carrera 6C #33N-106"
+    }
+}
