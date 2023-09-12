@@ -1,7 +1,3 @@
-import json from "./data.json";
-
-console.log(json)
-
 const listaDeContactos = [    //Lista de contactos
     'Jose Perez',
     'Andrea Luna',
