@@ -1,57 +1,57 @@
 const listaDeContactos = [    //Lista de contactos
     {
-        "id": 1,
-        "nombres": "Jose Ferney",
-        "apellidos": "Perez Camacho",
-        "telefono": "3178873843",
-        "ubicaciones":
+        id: 1,
+        nombres: "Jose Ferney",
+        apellidos: "Perez Camacho",
+        telefono: "3178873843",
+        ubicaciones:
             {
-            "ciudad": "Popayan",
-            "direccion": "Carrera 6C #33N-106"
+            ciudad: "Popayan",
+            direccion: "Carrera 6C #33N-106"
             }
     },
     {
-        "id": 2,
-        "nombres": "Andrea Katherine",
-        "apellidos": "Luna Nupan",
-        "telefono": "3174196401",
-        "ubicaciones":
+        id: 2,
+        nombres: "Andrea Katherine",
+        apellidos: "Luna Nupan",
+        telefono: "3174196401",
+        ubicaciones:
             {
-            "ciudad": "Popayan",
-            "direccion": "Carrera 0 # 0-01"
+            ciudad: "Popayan",
+            direccion: "Carrera 0 # 0-01"
             }
     },
     {
-        "id": 3,
-        "nombres": "Luz Elena",
-        "apellidos": "Nupan",
-        "telefono": "3175763933",
-        "ubicaciones":
+        id: 3,
+        nombres: "Luz Elena",
+        apellidos: "Nupan",
+        telefono: "3175763933",
+        ubicaciones:
             {
-            "ciudad": "La Plata",
-            "direccion": "Carrera 5 #6-31"
+            ciudad: "La Plata",
+            direccion: "Carrera 5 #6-31"
             }
     },
     {
-        "id": 4,
-        "nombres": "Braulio",
-        "apellidos": "Luna",
-        "telefono": "3142342734",
-        "ubicaciones":
+        id: 4,
+        nombres: "Braulio",
+        apellidos: "Luna",
+        telefono: "3142342734",
+        ubicaciones:
             {
-            "ciudad": "Belen",
-            "direccion": "Av 5 # 6-71"
+            ciudad: "Belen",
+            direccion: "Av 5 # 6-71"
             }
     },
     {
-        "id": 5,
-        "nombres": "Santiago",
-        "apellidos": "Bolaños",
-        "telefono": "3167674532",
-        "ubicaciones":
+        id: 5,
+        nombres: "Santiago",
+        apellidos: "Bolaños",
+        telefono: "3167674532",
+        ubicaciones:
             {
-            "ciudad": "Cali",
-            "direccion": "Tv 5 # 3-21"
+            ciudad: "Cali",
+            direccion: "Tv 5 # 3-21"
             }
     }
 ]
