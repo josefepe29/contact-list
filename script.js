@@ -68,10 +68,11 @@ function agregarContacto(id, nombres, apellidos, telefono, ubicaciones) {
         ubicaciones: ubicaciones
     }
     listaDeContactos.push(nuevoContacto);
-    console.log(`Contacto agregado: ${nuevoContacto.nombres} ${nuevoContacto.apellidos}`);
+    console.log('Contacto agregado satisfactoriamente');
+    console.log('Nuevo contacto:', nuevoContacto)
 }
 
-//Funcion para eliminar un contacto de la lista
+//Funcion para eliminar un contacto de la lista a partir del id
 
 function eliminarContacto(id) {
     let indice = -1;
@@ -83,8 +84,9 @@ function eliminarContacto(id) {
     }
 
     if (indice >= 0) {
-        listaDeContactos.splice(indice, 1);
-        console.log(`Contacto eliminado con id #${id}`)
+        let contactoEliminado = listaDeContactos.splice(indice, 1);
+        console.log(`Contacto con id ${id} eliminado satisfactoriamente`)
+        console.log('Contacto Eliminado', contactoEliminado)
     } else {
         console.log('El contacto no existe en la lista')
     }
@@ -99,6 +101,28 @@ function imprimirContactos() {
     })
 }
 
-agregarContacto(6,'Juan Sebastian', 'Delgado Carabali', '123123123123', {ciudad: 'Popayan', direccion: 'Carrera 5'});
+//Funcion para actualizar contactos a partir del id
+
+function actualizarContacto(id, nuevosDatos) {
+    let indice = -1;
+    for (let i = 0; i < listaDeContactos.length; i++) {
+        if (id === listaDeContactos[i].id) {
+            indice = i;
+            break;
+        }
+    }
+    
+    if (indice >= 0) {
+        
+        let listaActualizada = Object.assign(listaDeContactos[indice],nuevosDatos)
+        console.log(`El contacto ${listaDeContactos[indice].nombres} con id ${id} fue actualizado satisfactoriamente`)
+        console.log('Contacto Actualizado:', listaActualizada)
+    } else {
+        console.log('El contacto no existe en la lista')
+    }
+}
+
+agregarContacto(6, 'Juan Sebastian', 'Delgado', '123123123123', { ciudad: 'Popayan', direccion: 'Carrera 5' });
 eliminarContacto(1);
-imprimirContactos();
+actualizarContacto(2, {ubicaciones: {ciudad: 'Belen', direccion: 'Vereda la reforma'}})
+//imprimirContactos();
