@@ -124,5 +124,6 @@ function actualizarContacto(id, nuevosDatos) {
 
 agregarContacto(6, 'Juan Sebastian', 'Delgado', '123123123123', { ciudad: 'Popayan', direccion: 'Carrera 5' });
 eliminarContacto(1);
-actualizarContacto(2, {ubicaciones: {ciudad: 'Belen', direccion: 'Vereda la reforma'}})
-//imprimirContactos();
+actualizarContacto(2, { ubicaciones: { ciudad: 'La Plata', direccion: 'Carrera 5 #3n-06' } })
+console.log('Lista de contactos actualizada\n')
+imprimirContactos();
